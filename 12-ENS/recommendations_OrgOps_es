@@ -1,0 +1,50 @@
+Estas recomendaciones buscan alinear el contenido con el **ENS 2022 (Real Decreto 311/2022)** y mejorar su claridad normativa y técnica.
+---
+## 🟥 1. Normativa de referencia obsoleta
+
+- **Problema**: Se menciona el artículo 11 del *Real Decreto 3/2010*.
+- **Recomendación**: Sustituir por el **Real Decreto 311/2022** (vigente desde abril de 2022).
+- **Sugerencia adicional**: Evitar referenciar artículos específicos salvo que se compruebe que mantienen el mismo número en la nueva norma.
+---
+
+## 🟧 2. Errores en tablas de aplicabilidad de medidas
+
+- **Problema**: Las tablas indican que medidas como `Org.2` y `Org.3` aplican solo a niveles Medio y Alto.
+- **Corrección**: Según la Guía CCN-STIC 808, estas medidas también aplican en nivel Bajo.
+- **Recomendación**: Consultar el [perfil de cumplimiento base](https://www.ccn-cert.cni.es/es/800-guia-esquema-nacional-de-seguridad/518-ccn-stic-808-verificacion-del-cumplimiento-de-las-medidas-en-el-ens/file.html) y actualizar los símbolos en las tablas (✓, +, ++, etc.).
+
+---
+
+## 🟨 3. Falta de contexto sobre perfil de cumplimiento
+
+- **Problema**: El texto habla de niveles de seguridad (Bajo, Medio, Alto) pero no del **perfil de cumplimiento**, que determina qué medidas se aplican.
+- **Recomendación**: Añadir párrafo aclaratorio:
+  > Las medidas del ENS se aplican según el **perfil de cumplimiento** asignado al sistema, en función de su categoría y nivel de impacto. Este perfil permite adaptar la aplicación de medidas de forma proporcional.
+
+---
+
+## 🟩 4. Inconsistencias en etiquetas de medidas
+
+- **Problema**: Algunas medidas están etiquetadas como `Org.*` pero deberían estar bajo el Marco Operacional (`op.pl.*`).
+- **Ejemplo**: `op.pl.1` – Análisis de Riesgos aparece como si fuera parte del marco organizacional.
+- **Recomendación**: Verificar y corregir el encabezado y el tipo de marco para cada medida según su código:
+  - `Org.1` a `Org.4` → Marco Organizativo
+  - `op.pl.1` a `op.pl.4` → Marco Operacional
+
+---
+
+## 🟪 5. Conexión con medidas del anexo II
+
+- **Problema**: Se listan temas como “Gestión de Cambios” o “Protección contra Código Malicioso” sin mencionar su correspondencia con medidas del ENS.
+- **Recomendación**: Identificar y asociar explícitamente estas acciones con sus respectivas medidas del Anexo II, por ejemplo:
+  - Gestión de configuración → `op.ex.1`
+  - Gestión de incidentes → `op.mon.6`
+  - Protección contra malware → `op.pro.1`
+
+---
+
+## 🟫 6. Terminología a revisar
+
+- **Revisión sugerida**:
+  - “Categoría del sistema” → considerar “nivel de seguridad del sistema” para alinearse con el lenguaje oficial del RD 311/2022.
+  - Usar “medidas” o “controles” en lugar de “documentos” cuando se describan requisitos obligatorios.
