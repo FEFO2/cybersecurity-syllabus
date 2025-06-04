@@ -1,0 +1,86 @@
+Estas recomendaciones alinean el módulo con el **Esquema Nacional de Seguridad (ENS) actualizado - RD 311/2022**, y corrigen errores en terminología, codificación y estructura.
+
+---
+
+## 🟥 1. Terminología incorrecta en roles
+
+- **Problema**: Se menciona un “comité” y un “presidente con voto de calidad”, que no existen en la normativa oficial.
+- **Recomendación**: Sustituir por los roles establecidos en el ENS: Responsable de Información, Servicio, Seguridad y Sistema. El ENS no requiere comités ni estructuras de votación.
+
+---
+
+## 🟧 2. Códigos incorrectos de medidas
+
+- **Problema**: Repetición de códigos como `mp.if.1` y `mp.per4` para diferentes medidas.
+- **Recomendación**: Corregir los códigos para que coincidan con los del Anexo II. Ejemplo:
+  - “Instalaciones alternativas” → `mp.if.8` (no `mp.if.1`)
+  - “Medios alternativos” → `mp.per.8` (no `mp.per4`)
+
+---
+
+## 🟨 3. Falta de medidas completas o referencias oficiales
+
+- **Problema**: Se listan solo algunas medidas, lo que puede generar confusión.
+- **Recomendación**: Añadir nota aclaratoria:
+  > Esta no es una lista exhaustiva. Las 73 medidas completas están disponibles en la Guía CCN-STIC 808 del CCN-CERT.
+
+---
+
+## 🟦 4. Inconsistencia en marcos de medidas
+
+- **Problema**: Algunas medidas del marco **operacional** aparecen bajo etiquetas como “Org”.
+- **Recomendación**: Revisar y corregir etiquetas. Ejemplo:
+  - `op.mon.1` → Marco Operacional
+  - `org.1` a `org.4` → Marco Organizativo
+
+---
+
+## 🟩 5. Niveles BASE, Reforzado y Alto no explicados
+
+- **Recomendación**: Añadir este texto introductorio a las tablas:
+  > Todas las medidas del ENS tienen tres niveles: **BASE** (obligatorio en todos los casos), **Reforzado** y **Alto**. La aplicación de cada nivel depende del perfil de cumplimiento del sistema.
+
+---
+
+## 🟪 6. Ambigüedad en “nivel L/M/H”
+
+- **Problema**: Las tablas tienen columnas “L / M / H” sin explicar si se refieren al sistema o al requisito.
+- **Recomendación**: Aclarar que se refieren a los **niveles de exigencia de la medida**, no al sistema evaluado. Usar símbolos oficiales: `=`, `+`, `++`.
+
+---
+
+## 🔵 7. Tabla sin leyenda de símbolos
+
+- **Problema**: No se explica qué significan `++`, `+`, `=`.
+- **Recomendación**: Añadir leyenda al pie o antes de la tabla:
+  - `++`: Requisito para sistemas de **nivel alto**
+  - `+`: Requisito para sistemas de **nivel medio**
+  - `=`: Requisito **BASE**, obligatorio para todos
+
+---
+
+## 🟫 8. No se menciona el ciclo de vida del sistema
+
+- **Recomendación**: Añadir una nota al final de la sección de implementación:
+  > Las medidas deben aplicarse durante todo el ciclo de vida del sistema: desde el diseño hasta la retirada, garantizando seguridad continua.
+
+---
+
+## 🟨 9. Falta de énfasis en análisis de riesgos
+
+- **Recomendación**: Añadir este párrafo en la sección inicial de implementación:
+  > La selección e implementación de medidas debe basarse en un **análisis de riesgos**, que determina qué controles aplicar y con qué nivel de exigencia.
+
+---
+
+## 🟥 10. Celdas vacías en tablas de nivel Bajo
+
+- **Problema**: Algunas medidas parecen no aplicarse a nivel Bajo por estar en blanco.
+- **Recomendación**: Completar con `=` cuando el nivel BASE sea obligatorio, o justificar la excepción.
+
+---
+
+## 🟦 11. Falta de mención a auditoría y certificación
+
+- **Recomendación**: Añadir al final:
+  > Las entidades obligadas a cumplir el ENS deben superar auditorías externas cada 2 años para obtener y mantener la certificación correspondiente a su nivel de seguridad.
