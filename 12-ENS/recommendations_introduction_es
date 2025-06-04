@@ -1,0 +1,86 @@
+# 📋 Recomendaciones para actualizar `ens.es.md`
+
+## 🟥 1. Base normativa desactualizada
+- **Ubicación**: Línea 19 y 23 aprox. (Real Decreto 3/2010)
+- **Recomendación**: Cambiar a **Real Decreto 311/2022** (vigente desde abril de 2022).  
+  También se debe eliminar cualquier mención a normativa anterior salvo que sea por motivos históricos.
+
+---
+
+## 🟧 2. Número y clasificación de medidas incorrectas
+- **Ubicación**: Sección `## Medidas de seguridad 🔒`
+- **Texto actual**: “75 medidas de seguridad divididas en 3 grupos”
+- **Corrección**:
+  - Son **73 medidas** según el nuevo ENS.
+  - Repartidas en:
+    - **Marco organizativo**: 16 medidas
+    - **Marco operacional**: 31 medidas
+    - **Medidas de protección**: 26 medidas
+  - Además, cada medida tiene tres niveles de exigencia: **BASE (obligatorio), Reforzado y Alto**.
+
+---
+
+## 🟨 3. Incluir los requisitos BASE, Reforzado y Alto
+- **Dónde**: Justo después de la sección `## Medidas de seguridad 🔒`
+- **Recomendación**: Añadir texto explicativo sobre cómo cada medida tiene distintos niveles de cumplimiento y que los requisitos **BASE** son siempre obligatorios, tal como indica la Guía CCN-STIC 808.
+
+---
+
+## 🟦 4. Actualizar quién debe cumplir el ENS
+- **Ubicación sugerida**: Entre introducción y sección `## Regulación y Finalidad del ENS`
+- **Recomendación**: Añadir una sección o bloque que aclare:
+  > El ENS aplica obligatoriamente a todas las administraciones públicas españolas y también a empresas privadas que presten servicios o gestionen sistemas por encargo de estas. El cumplimiento puede ser obligatorio por contrato, especialmente en licitaciones públicas.
+
+---
+
+## 🟩 5. Mención del nuevo concepto de “Perfil de cumplimiento”
+- **Estado actual**: No se menciona
+- **Ubicación sugerida**: Nueva subsección antes de `## Implementación y cumplimiento`
+- **Recomendación**:
+  > Los perfiles de cumplimiento permiten aplicar las medidas de seguridad de forma proporcional según la criticidad de los sistemas, el nivel de madurez y los recursos de la organización.
+
+---
+
+## 🟫 6. Eliminar mención a 4 controles del marco organizativo
+- **Texto actual**: “Marco organizativo (4 controles)” → incorrecto
+- **Corrección**: Debe decir **16 controles** según RD 311/2022.
+
+---
+
+## ⚪ 7. Actualizar tabla comparativa ENS vs ISO 27001
+- **Ubicación**: Sección `## Diferencia entre ENS y ISO 27001 🤔`
+- **Correcciones**:
+  - Donde dice “75 medidas específicas” → debe decir **73 medidas**
+  - Asegurarse que en “Certificación” diga: **Válida por 2 años para ENS**
+  - Añadir fila sobre niveles de implementación: ENS tiene niveles bajo, medio y alto; ISO no.
+
+---
+
+## 🟣 8. Agregar observación sobre el plazo de adecuación
+- **Ubicación sugerida**: Cerca del final
+- **Recomendación**:
+  > Las entidades tienen un plazo de **24 meses desde abril de 2022** para adaptarse al nuevo ENS. Este periodo finalizó en abril de 2024.
+
+---
+
+## 🔵 9. (Opcional) Añadir sección de preguntas frecuentes (FAQ)
+- Para hacerlo más didáctico, sugerir incluir una mini sección FAQ con preguntas como:
+  - ¿Aplica el ENS a empresas privadas?
+  - ¿Qué ocurre si no cumplo con el ENS?
+  - ¿Puedo usar ISO 27001 como base?
+
+---
+
+## ✅ Resumen rápido de cambios a realizar
+
+| Tipo de cambio           | Estado actual     | Acción recomendada                   |
+|--------------------------|-------------------|--------------------------------------|
+| Base normativa           | RD 3/2010         | Cambiar a RD 311/2022                |
+| Nº de medidas            | 75                | Corregir a 73                        |
+| Clasificación marco      | 4/31/40           | Cambiar a 16/31/26                   |
+| Niveles de medidas       | No se menciona    | Añadir: BASE, Reforzado, Alto        |
+| Perfil de cumplimiento   | No está           | Añadir descripción                   |
+| Tabla ENS vs ISO         | 75 medidas        | Corregir a 73, revisar otros detalles|
+| Empresas privadas        | No está           | Añadir criterios de aplicación       |
+| Plazo de adaptación      | No se indica      | Añadir: 24 meses desde abril 2022    |
+"""
